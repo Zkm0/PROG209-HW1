@@ -1,5 +1,44 @@
- body {
+body {
     margin: 50px;
-    font-family: Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 150%;
-}
+    color:darkslategrey;
+    background-color: lightcyan;
+    text-align: center;
+ }
+ 
+ button {
+    background-color: lightslategray;
+    color: lavender;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    font-size: 15px;
+    opacity: 0.9;
+    transition: 0.3s;
+ }
+ 
+ button:hover {
+    cursor:pointer;
+    opacity:1;
+    font-size: 18px;
+ }
+ 
+ input {
+    padding: 7px;
+    margin:5px;
+    border-radius:10px;
+    border: solid lightslategray;
+ }
+ 
+ input:focus {
+    border: solid black;
+ }
+ 
+ #minutes {
+    width: 50px;
+ }
+ 
+ #highestCals {
+    width:250px;
+ }

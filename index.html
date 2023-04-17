@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Pizza maker</title>
+    <link rel="stylesheet" type="text/css" href="site.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>starter code</title>
-<link rel="stylesheet" type="text/css" href="site.css">
-</head>
+  <body>
+    <h1>Pizza Maker</h1>
+    
+    <div id="RadioButtons">
+      <h3>Select Pizza Size:</h3>
+      <input type="radio" id="small" name="toping" value="small" />
+      <label for="small">small</label>
 
-<body>
-<h2>starter project</h2>
-<img src="https://www.dogandpuptown.com/wp-content/uploads/2018/11/Labrador-Puppies-1217.jpg" alt="Cute Labrador in the snow">
-<br>
-<button type="button" id="button1">Button</button>
-<div>
-    <br />
-    <input type="text" val="starting value" text="hello" id="textbox1" />
-    <br />
-</div>
+      <input type="radio" id="medium" name="toping" value="medium" />
+      <label for="medium">medium</label>
 
-<script src="main.js"></script>
-</body>
+      <input type="radio" id="large" name="toping" value="large" />
+      <label for="large">large</label>
+    </div></body>
 
+    <div id="topping">
+
+      <label for="topping">Choose number of toppings:</label>
+
+<select name="toppings" id="toppings">
+  <option value="No toppings">No toppings</option>
+  <option value="1 topping">1 topping</option>
+  <option value="2 toppings">2 toppings</option>
+</select>
+    </div><br /><br />
+
+    <button id="Submit" onclick="submit()">Submit</button>
+
+    <div style="text-align: center;" id= "displayprice">
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
